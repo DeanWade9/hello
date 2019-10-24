@@ -1,6 +1,16 @@
+#定义一个斐波拉契生成函数
 def fn(x):
     n,a,b = 0,0,1
     print(b)
+    while n < x:
+        a,b = b,a + b
+        n = n + 1
+    return 'Done'
+
+#定义一个斐波拉契generator
+def fn(x):
+    n,a,b = 0,0,1
+    yield(b)
     while n < x:
         a,b = b,a + b
         n = n + 1
