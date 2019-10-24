@@ -1,0 +1,7 @@
+def fn(x):
+    n,a,b = 0,0,1
+    print(b)
+    while n < x:
+        a,b = b,a + b
+        n = n + 1
+    return 'Done'
